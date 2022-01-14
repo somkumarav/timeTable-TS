@@ -26,23 +26,23 @@ export const Table: React.FC<Props> = ({ subjects, setCurrentPeriod }) => {
 
         <div className="table-row-item">
           <span>I</span>
-          <span>9:15AM - 10:00AM</span>
+          <span className="hide-mobile">9:15AM - 10:00AM</span>
         </div>
         <div className="table-row-item">
           <span>II</span>
-          <span>10:15AM - 11:00AM</span>
+          <span className="hide-mobile">10:15AM - 11:00AM</span>
         </div>
         <div className="table-row-item">
           <span>III</span>
-          <span>11:15AM - 12:00PM</span>
+          <span className="hide-mobile">11:15AM - 12:00PM</span>
         </div>
         <div className="table-row-item">
           <span>IV</span>
-          <span>12:15PM - 1:00PM</span>
+          <span className="hide-mobile">12:15PM - 1:00PM</span>
         </div>
         <div className="table-row-item">
           <span>V</span>
-          <span>2:00PM - 3:00PM</span>
+          <span className="hide-mobile">2:00PM - 3:00PM</span>
         </div>
       </div>
 
