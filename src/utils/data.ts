@@ -1,12 +1,12 @@
-interface IState{
-  dayEnnum:string[];
-  monthEnnum:string[]
+interface IState {
+  dayEnnum: string[];
+  monthEnnum: string[];
 
-  subjects:{
+  subjects: {
     id: number;
     subject: string;
     subjectName: string;
-    periods:number[],
+    periods: number[];
     faculty: string;
     slot: string;
     code: string;
@@ -15,8 +15,7 @@ interface IState{
   }[];
 }
 
-
-export const dayEnnum:IState['dayEnnum'] = [
+export const dayEnnum: IState['dayEnnum'] = [
   'Sunday',
   'Monday',
   'Tuesday',
@@ -26,7 +25,7 @@ export const dayEnnum:IState['dayEnnum'] = [
   'Saturday',
 ];
 
-export const monthEnnum:IState['monthEnnum'] = [
+export const monthEnnum: IState['monthEnnum'] = [
   'January',
   'February',
   'March',
@@ -41,94 +40,96 @@ export const monthEnnum:IState['monthEnnum'] = [
   'December',
 ];
 
-export const s4:IState['subjects']=[
+export const s4: IState['subjects'] = [
   {
-   id: 0,
-    subject: 'gt',
-    subjectName: 'Graph Theory',
-    periods: [24, 33, 42, 51],
-    faculty: 'Dr. Susanth C (SC)',
+    id: 0,
+    subject: 'flat',
+    subjectName: 'Formal Languages and Automata Theory',
+    periods: [14, 31, 42, 53],
+    faculty: 'Salitha K K',
     slot: 'A',
-    code: 'MAT 206 ',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDUxMDI4Mzkw',
-    googleMeetLink: 'https://meet.google.com/lookup/ea6uhdtjbn?authuser=0&hs=179',
+    code: 'CST 301',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY0MzM5NDU1',
+    googleMeetLink: 'https://meet.google.com/usx-spkx-fvx?authuser=0',
   },
   {
     id: 1,
-    subject: 'coa',
-    subjectName: 'Computer Organization and Architecture',
-    periods: [14, 21, 32, 44],
-    faculty: 'Shameem S (SS)',
+    subject: 'cn',
+    subjectName: 'Computer Networks',
+    periods: [13, 24, 41, 52],
+    faculty: 'Jucy Vareed',
     slot: 'B',
-    code: 'CST 202',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDQ5MDY3NjU1',
-    googleMeetLink: 'https://meet.google.com/lookup/fgohtz74gy?authuser=0&hs=179',
+    code: 'CST 303',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY0MzM5NTE2',
+    googleMeetLink: 'https://meet.google.com/rvx-zjck-gsp?authuser=0',
   },
   {
     id: 2,
-    subject: 'dbms',
-    subjectName: 'Data Base Managment System',
-    periods: [11, 22, 34, 53],
-    faculty: 'Jucy Vareed (JV)',
+    subject: 'ss',
+    subjectName: 'System Software',
+    periods: [22, 33, 44, 51],
+    faculty: 'Remya P S',
     slot: 'C',
-    code: 'CST 204',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDQ5MDY3NzYw',
-    googleMeetLink: 'https://meet.google.com/lookup/fl62oqn4kb?authuser=0&hs=179',
+    code: 'CST 305',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY0MzM5NTU2',
+    googleMeetLink: 'https://meet.google.com/dpy-wxmv-zzx?authuser=0',
   },
   {
     id: 3,
-    subject: 'os',
-    subjectName: 'Operating Systems',
-    periods: [13, 23, 31, 41],
-    faculty: 'Nakulraj K R (NKR)',
+    subject: 'mm',
+    subjectName: 'Microprocessors And Microconrollers',
+    periods: [12, 21, 54],
+    faculty: 'Beena M V',
     slot: 'D',
-    code: 'CST 206',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDQ5MDY3ODU2',
-    googleMeetLink: 'https://meet.google.com/lookup/gzoosfb3cq?authuser=0&hs=179',
+    code: 'CST 307',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY0MzM5NTc5',
+    googleMeetLink: 'https://meet.google.com/ahd-mwhq-rrj?authuser=0',
   },
   {
     id: 4,
-    subject: 'pe',
-    subjectName: 'Professional Ethics',
-    periods: [43, 52],
-    faculty: 'Athira P S(APS)	',
+    subject: 'mss',
+    subjectName: 'Management of Software Systems',
+    periods: [11, 23, 32],
+    faculty: 'Anima V A',
     slot: 'E',
-    code: 'HUT 200',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDUxMDM3NjM5',
-    googleMeetLink: 'https://meet.google.com/lookup/fs2hwqvcqf?authuser=0&hs=179',
+    code: 'CST 309',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY2Nzc0NjQ2',
+    googleMeetLink: 'https://meet.google.com/kif-yfkj-tcn?authuser=0',
   },
   {
     id: 5,
-    subject: 'ci',
-    subjectName: 'Constitution of India',
-    periods: [12, 54],
-    faculty: 'Sonia Rose C P (SRCP)',
+    subject: 'dm',
+    subjectName: 'Disaster Management',
+    periods: [34, 43],
+    faculty: 'Lasitha Mohanhas',
     slot: 'F',
-    code: 'MCN 202',
-    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDUwMDI3MDQx',
-    googleMeetLink: 'https://meet.google.com/lookup/f55pnueayr?authuser=0&hs=179',
+    code: '-',
+    googleClassRoomLink: 'https://classroom.google.com/u/0/c/NDM1OTY0MzM5NjI1',
+    googleMeetLink: 'https://meet.google.com/yhk-yboi-fxo',
   },
   {
     id: 6,
-    subject: 'digital-lab',
-    subjectName: 'Digital Lab',
-    periods: [25],
-    faculty: 'Remya Rajendran (RR), Honey Mol P K (HPK)',
+    subject: 'dblab',
+    subjectName: 'Database Management Systems Lab',
+    periods: [15],
+    faculty: 'Jucy Vareed, Anima V A',
     slot: 'S',
-    code: 'CSL 202',
+    code: 'CSL 333',
     googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDUzMzExMjEz',
-    googleMeetLink: 'https://meet.google.com/lookup/a5sopjb25y?authuser=0&hs=179',
+    googleMeetLink:
+      'https://meet.google.com/lookup/a5sopjb25y?authuser=0&hs=179',
   },
   {
     id: 7,
-    subject: 'os-lab',
-    subjectName: 'Operating Systems Lab',
-    periods: [15],
-    faculty: 'Nakulraj K R (NKR), Jucy Vareed (JV)',
+    subject: 'ssmlab',
+    subjectName: 'System Software and Microprocessor Lab',
+    periods: [25],
+    faculty: 'Beena M V, Shameem S',
     slot: 'T',
-    code: 'CSL204',
-    googleClassRoomLink :'https://classroom.google.com/c/MzI2MDU0NTQ2NDA2',
-    googleMeetLink: 'https://meet.google.com/lookup/fovzsojpz4?authuser=0&hs=179',
+    code: 'CSL 331',
+    googleClassRoomLink: 'https://classroom.google.com/c/MzI2MDU0NTQ2NDA2',
+    googleMeetLink:
+      'https://meet.google.com/lookup/fovzsojpz4?authuser=0&hs=179',
   },
   {
     id: 8,
@@ -142,7 +143,3 @@ export const s4:IState['subjects']=[
     googleMeetLink: '',
   },
 ];
-
-export const subjectEnum={
-  11:'dms'
-}

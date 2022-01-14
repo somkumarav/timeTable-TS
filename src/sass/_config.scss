@@ -8,6 +8,13 @@ $accent-color: #dc3434;
 $Poppins: 'Poppins', sans-serif;
 $mobile: 800px;
 // $laptop: ;
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,4 +26,7 @@ $mobile: 800px;
 body {
   background-color: $black;
   color: $white;
+  @include mobile {
+    background-color: $white;
+  }
 }

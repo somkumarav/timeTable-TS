@@ -67,7 +67,7 @@ export const Content: React.FC<Props> = ({ data }) => {
         )}
         {subjectInfo && <DisplayInfo subjectsInfo={subjectInfo} />}
       </div>
-      <div className="content-left"></div>
+      <div className="content-right"></div>
     </div>
   );
 };
